@@ -1,0 +1,40 @@
+/* Style the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Outer box */
+  .outer-box {
+    width: 400px; 
+    height: 200px; 
+    background-color: #000f01; 
+    color: white; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    border-radius: 8px; 
+    text-align: center;
+  }
+  
+  /* Inner box */
+  .inner-box {
+    width: 300px; 
+    height: 70px;
+    background-color: #ff229c; 
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    top: -30px; /* Peeking out of the top of the outer box */
+    border-radius: 8px; 
+    text-align: center;
+  }
+  

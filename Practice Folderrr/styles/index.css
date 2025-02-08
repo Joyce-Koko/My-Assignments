@@ -1,0 +1,63 @@
+/* Element selector */
+p {
+  color: rgb(227, 236, 49);
+  font-style: oblique;
+  font-size: 30px;
+}
+/* ID selector*/
+#footer-p {
+  font-size: 70px;
+  color: pink;
+  border: 1cm;
+}
+/* class selector*/
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.sub {
+  color: purple;
+  font-size: 50px;
+  font-weight: 500;
+  text-decoration: underline;
+  padding: 100px;
+  border: 10px solid violet;
+  margin: 50px;
+  position: relative;
+}
+.container {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: pink;
+}
+.container:hover {
+  background-color: blue;
+  color: purple;
+  font-size: 20px;
+  text-decoration: line-through;
+  text-shadow: 2px 2px 2px black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.animate {
+  animation-name: slidein;
+  animation-duration: 5s;
+}
+
+/* Keyframes */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

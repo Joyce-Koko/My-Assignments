@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #b5b3d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 350px;
+    text-align: center;
+    position: relative;
+}
+
+.badge {
+    background: #f6e58d;
+    color: black;
+    font-weight: bold;
+    padding: 10px 10px;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.text-container {
+    padding: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.series {
+    font-size: 14px;
+    color: gray;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
