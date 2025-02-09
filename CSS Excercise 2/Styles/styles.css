@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #ddd; /* Making the whole bottom part grey */
+    background: #ddd; 
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
 }
 
 .bottom-section {
-    background: #ddd;
+    background: #a99e9e;
     padding: 40px 20px;
     display: flex;
     justify-content: center;
@@ -32,10 +32,10 @@ body {
 }
 
 .content-wrapper {
-    background: white;
+    background: rgb(239, 221, 221);
     padding: 20px;
-    width: 50%; /* Centered white box */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%; 
+    box-shadow: 0 4px 6px rgba(243, 232, 232, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@ body {
     display: inline-block;
     position: absolute;
     top: auto;
-    left: -20px; /* Peeking out from the left side of the white box */
+    left: -20px;
     transform: translateY(-50%);
 }
 
