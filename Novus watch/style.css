@@ -22,14 +22,13 @@ body {
     background: #f6e58d;
     color: black;
     font-weight: bold;
-    padding: 10px 10px;
+    padding: 10px 20px;
     position: absolute;
     top: 10px;
     left: -10px;
     border-radius: 5px;
-    align-items: center;
-    display: flex;
-    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .image-container img {
