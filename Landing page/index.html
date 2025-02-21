@@ -6,61 +6,86 @@
     <title>Joyce's Assignments</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
-            background-color: #f4e1d2;
+            background: linear-gradient(135deg, #f8c8dc, #a8e6cf);
             color: #5a3e2b;
             margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
-            max-width: 600px;
-            margin: auto;
-            background: #d9b99b;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            background: #fff0f5;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         h1 {
-            color: #8b5e3c;
+            color: #d97a91;
+            font-size: 28px;
+            margin-bottom: 15px;
         }
         .intro {
-            font-size: 18px;
-            margin-bottom: 20px;
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: #a65d6e;
         }
-        .link-list {
-            list-style: none;
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
             padding: 0;
         }
-        .link-list li {
-            margin: 10px 0;
-        }
-        .link-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #a67c52;
-            color: white;
+        .grid-item {
+            background: #fce4ec;
+            padding: 15px;
+            border-radius: 12px;
             text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
+            color: #5a3e2b;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
-        .link-button:hover {
-            background: #8b5e3c;
+        .grid-item:hover {
+            background: #a8e6cf;
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+        p {
+            font-size: 14px;
+            color: #a65d6e;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hi, I'm Joyce! ✨</h1>
+        <h1>Hi, I'm Joyce.✨</h1>
         <p class="intro">A Cloud Engineering student passionate about technology and innovation. Here are my assignments:</p>
-        <ul class="link-list">
-            <li><a href="https://joyceassignment1.netlify.app/" class="link-button" target="_blank">Assignment 1</a></li>
-            <li><a href="https://joyceassignment2.netlify.app/" class="link-button" target="_blank">Assignment 2</a></li>
-            <li><a href="https://joycehuckleberry.netlify.app/" class="link-button" target="_blank">HuckleBerry</a></li>
-            <li><a href="https://joycenovuswatch.netlify.app/" class="link-button" target="_blank">Novus Watch</a></li>
-            <li><a href="https://joyceotteressay.netlify.app/" class="link-button" target="_blank">Otter Essay</a></li>
-            <li><a href="https://joycewppusher.netlify.app/" class="link-button" target="_blank">WP pusher</a></li>
-        </ul>
+        <div class="grid-container">
+            <a href="https://joyceassignment1.netlify.app/" class="grid-item" target="_blank">Assignment 1</a>
+            <a href="https://joyceassignment2.netlify.app/" class="grid-item" target="_blank">Assignment 2</a>
+            <a href="https://joycehuckleberry.netlify.app/" class="grid-item" target="_blank">HuckleBerry</a>
+            <a href="https://joycenovuswatch.netlify.app/" class="grid-item" target="_blank">Novus Watch</a>
+            <a href="https://joyceotteressay.netlify.app/" class="grid-item" target="_blank">Otter Essay</a>
+            <a href="https://joyceassignment4.netlify.app/" class="grid-item" target="_blank">Assignment 4</a>
+            <a href="https://joyceassignment5.netlify.app/" class="grid-item" target="_blank">Assignment 5</a>
+            <a href="https://joyceassignment6.netlify.app/" class="grid-item" target="_blank">Assignment 6</a>
+        </div>
         <p>Thank you for visiting! 💖</p>
     </div>
 </body>
