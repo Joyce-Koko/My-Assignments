@@ -27,7 +27,6 @@ body {
     align-items: flex-start;
     text-align: left;
     background-color: rgb(247, 253, 252);
-    height: 100%;
     z-index: 2;
     position: relative;
 }
@@ -56,7 +55,6 @@ p {
     font-size: 16px;
     color: #555;
     text-align: left;
-    justify-content: left;
     margin-bottom: 20px;
     line-height: 1.5;
 }
@@ -67,12 +65,9 @@ p {
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    position: absolute;
-    right: 1%;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative; 
     width: 35%;
-    height: 150%;
+    height: auto; 
     z-index: 3;
 }
 
@@ -130,31 +125,39 @@ button.register-btn:hover {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
     .container {
         flex-direction: column;
         max-width: 90%;
         align-items: center;
-        padding: 0 20px;
+        padding: 20px;
     }
     
     .info-section {
         align-items: center;
         text-align: center;
-    }
-
-    .info-section, .form-section {
         padding: 20px;
     }
 
     .form-section {
-        position: static;
-        transform: none;
-        width: 100%;
-        box-shadow: none;
+        width: 90%;  
+        box-shadow: none; 
+        padding: 20px;
     }
 
     .form-group {
         flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .form-section {
+        width: 100%;
     }
 }

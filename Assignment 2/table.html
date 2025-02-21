@@ -16,6 +16,10 @@
             color: #fff;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
         table {
             width: 80%;
             margin: 20px auto;
@@ -61,87 +65,110 @@
             color: white;
             border-radius: 10px;
         }
+        
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .table-container {
+                width: 100%;
+                overflow-x: auto;
+            }
+            table {
+                width: 100%;
+                font-size: 12px;
+            }
+            th, td {
+                padding: 8px;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>AltSchool Africa Schools and Courses</h1>
     <h2>Representation 1: Schools in columns and courses listed beneath</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>School</th>
-                <th>Courses</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="4">School of Engineering</td>
-                <td>Frontend Engineering</td>
-            </tr>
-            <tr>
-                <td>Backend Engineering</td>
-            </tr>
-            <tr>
-                <td>Cloud Engineering</td>
-            </tr>
-            <tr>
-                <td>Cybersecurity</td>
-            </tr>
-            <tr>
-                <td rowspan="3">School of Product</td>
-                <td>Product Design</td>
-            </tr>
-            <tr>
-                <td>Product Marketing</td>
-            </tr>
-            <tr>
-                <td>Product Management</td>
-            </tr>
-            <tr>
-                <td rowspan="3">School of Data</td>
-                <td>Data Analysis</td>
-            </tr>
-            <tr>
-                <td>Data Science</td>
-            </tr>
-            <tr>
-                <td>Data Engineering</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th>Courses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">School of Engineering</td>
+                    <td>Frontend Engineering</td>
+                </tr>
+                <tr>
+                    <td>Backend Engineering</td>
+                </tr>
+                <tr>
+                    <td>Cloud Engineering</td>
+                </tr>
+                <tr>
+                    <td>Cybersecurity</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">School of Product</td>
+                    <td>Product Design</td>
+                </tr>
+                <tr>
+                    <td>Product Marketing</td>
+                </tr>
+                <tr>
+                    <td>Product Management</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">School of Data</td>
+                    <td>Data Analysis</td>
+                </tr>
+                <tr>
+                    <td>Data Science</td>
+                </tr>
+                <tr>
+                    <td>Data Engineering</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <p>The table above represents the schools as headers and lists their respective courses below them. This format makes it easy to focus on the courses within a single school.</p>
 
     <h2>Representation 2: Schools in rows and courses in separate columns</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>School</th>
-                <th colspan="4">Courses</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>School of Engineering</td>
-                <td>Frontend Engineering</td>
-                <td>Backend Engineering</td>
-                <td>Cloud Engineering</td>
-                <td>Cybersecurity</td>
-            </tr>
-            <tr>
-                <td>School of Product</td>
-                <td>Product Design</td>
-                <td>Product Marketing</td>
-                <td colspan="2">Product Management</td>
-            </tr>
-            <tr>
-                <td>School of Data</td>
-                <td>Data Analysis</td>
-                <td>Data Science</td>
-                <td colspan="2">Data Engineering</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th colspan="4">Courses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>School of Engineering</td>
+                    <td>Frontend Engineering</td>
+                    <td>Backend Engineering</td>
+                    <td>Cloud Engineering</td>
+                    <td>Cybersecurity</td>
+                </tr>
+                <tr>
+                    <td>School of Product</td>
+                    <td>Product Design</td>
+                    <td>Product Marketing</td>
+                    <td colspan="2">Product Management</td>
+                </tr>
+                <tr>
+                    <td>School of Data</td>
+                    <td>Data Analysis</td>
+                    <td>Data Science</td>
+                    <td colspan="2">Data Engineering</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <p>The table above represents the schools in one column and their respective courses distributed across multiple columns. This format allows for clear representation of how courses are distributed among different schools.</p>
 
@@ -152,4 +179,3 @@
     </footer>
 </body>
 </html>
-
